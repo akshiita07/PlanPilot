@@ -1,0 +1,187 @@
+﻿body {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.container {
+    background-color: #60c0bf;
+    min-height: 75vh;
+    min-width: 40vw;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.container h1 {
+    font-family: "Playwrite ES", cursive;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+#newTaskForm {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.newTaskInput {
+    background-color: #f7cb66;
+    border: 1.5px solid black;
+    outline: none;
+    padding: 10px 20px;
+    min-width: 300px;
+    border-radius: 10px;
+}
+
+.newTaskInput::placeholder {
+    color: gray;
+    font-size: 0.8rem;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.newTaskButton {
+    background-color: #7fbc95;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    width: 130px;
+    padding: 10px 10px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.newTaskButton:hover {
+    background-color: #6ab886;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.taskItems {
+    background-color: #c787ff;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    margin: 0;
+    padding: 3px 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskItemsIcons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#editForm {
+    display: inline;
+}
+#tickForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.editButton {
+    background-color: #7fbc95;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+.editButton:hover {
+    background-color: #6ab886;
+    cursor: pointer;
+}
+
+.editButton>svg:hover {
+    stroke-width: 1.3;
+}
+
+#deleteForm {
+    display: inline;
+}
+
+.deleteButton {
+    background-color: #e06b6b;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+.deleteButton:hover {
+    background-color: #de5858;
+    cursor: pointer;
+}
+
+.deleteButton>svg:hover {
+    stroke-width: 1;
+}
+
+#editedForm{
+    display: inline;
+}
+.doneButton {
+    background-color: #8fc3ff;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+.doneButton:hover {
+    background-color: #6daffa;
+    cursor: pointer;
+}
+
+.doneButton>svg:hover {
+    stroke-width: 1.4;
+}
+
+.editTextInput{
+    min-width: 355px;
+}
+
+
+.taskItems p {
+    margin: 0;
+    display: inline;
+}
+
+footer {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #c787ff;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0px;
+    font-size: 1rem;
+}
