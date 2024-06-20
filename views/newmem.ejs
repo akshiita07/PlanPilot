@@ -1,0 +1,69 @@
+﻿<%- include("partials/header.ejs") %>
+
+    <!-- add family members -->
+    <!-- add multiple lists -->
+
+    <div class="container">
+        <h1>PlanPilot- New Member</h1>
+
+        <form action="/newMem" method="post">
+            <label for="inputName">What's your name</label>
+            <input class="input" id="inputName" type="text" name="name" autofocus autocomplete="off" placeholder="Enter name here...">
+    
+            <label for="colors">Pick a color</label>
+            <!-- 10 colors -->
+            <div id="colors">
+                <input class="input"  type="radio" name="color" required value="red" id="red">
+                <label class="colorOption" for="red">
+                    <div id="red"></div>
+                </label>
+    
+                <input class="input"  type="radio" name="color" required value="orange" id="orange">
+                <label class="colorOption" for="orange">
+                    <div id="orange"></div>
+                </label>
+    
+                <input  class="input"  type="radio" name="color" required value="thistle" id="thistle">
+                <label class="colorOption" for="thistle">
+                    <div id="thistle"></div>
+                </label>
+    
+                <input  class="input"  type="radio" name="color" required value="green" id="green">
+                <label class="colorOption" for="green">
+                    <div id="green"></div>
+                </label>
+    
+                <input  class="input"  type="radio" name="color" required value="lawngreen" id="lawngreen">
+                <label class="colorOption" for="lawngreen">
+                    <div id="lawngreen"></div>
+                </label>
+    
+                <input  class="input"  type="radio" name="color" required value="magenta" id="magenta">
+                <label class="colorOption" for="magenta">
+                    <div id="magenta"></div>
+                </label>
+    
+                <input  class="input"  type="radio" name="color" required value="coral" id="coral">
+                <label class="colorOption" for="coral">
+                    <div id="coral"></div>
+                </label>
+    
+                <input  class="input"  type="radio" name="color" required value="blue" id="blue">
+                <label class="colorOption" for="blue">
+                    <div id="blue"></div>
+                </label>
+    
+                <input  class="input"  type="radio" name="color" required value="pink" id="pink">
+                <label class="colorOption" for="pink">
+                    <div id="pink"></div>
+                </label>
+    
+                <input  class="input"  type="radio" name="color" required value="purple" id="purple">
+                <label class="colorOption" for="purple">
+                    <div id="purple"></div>
+                </label>
+    
+            </div>
+            <button id="addBtn" type="submit">Add</button>
+        </form>
+    </div>

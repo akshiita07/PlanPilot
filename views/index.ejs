@@ -6,8 +6,9 @@
 
         <form action="/new" method="post" id="newTaskForm">
             <!-- text of todo       button to add it -->
-            <input class="newTaskInput" name="userInput" type="text" placeholder="Enter new task here..." required
-                autofocus autocomplete="off">
+            <input class="newTaskInput" name="userInput" type="text" 
+            placeholder= "<%if(locals.errorMsg){%> <%= errorMsg %> <% }else{ %> Enter new task here... <% } %>"  required autofocus autocomplete="off">
+
             <button class="newTaskButton" type="submit">Add Task</button>
         </form>
 
