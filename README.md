@@ -1,6 +1,36 @@
 # PlanPilot
 
-This project is a to-do list web application implemented using the Express.js framework for the backend, PostgreSQL for the database, and EJS (Embedded JavaScript) for the front-end templating.
+The PlanPilot project is a to-do list web application built with Express.js for the backend, PostgreSQL for the database, and EJS for front-end templating. It allows users to add, edit, and delete tasks. The project structure includes:
+
+1. **Express.js Setup**: Initializes server and dependencies.
+2. **Middleware**: Handles static files and parses incoming data.
+3. **Database Connection**: Connects to a PostgreSQL database.
+4. **Database Schema**: Contains a table `items` for tasks.
+5. **Routes**: Handles CRUD operations via specific endpoints.
+6. **EJS Templates**: Renders dynamic content on the front end.
+
+### Key Files and Folders:
+- `index.js`: Main server file.
+- `views/`: Contains EJS templates.
+- `public/`: Holds static files like CSS.
+- `package.json`: Lists project dependencies.
+
+### Dependencies:
+- `express`
+- `body-parser`
+- `pg`
+- `ejs`
+
+### How It Works:
+1. **Server Initialization**: Express server runs on port 3000.
+2. **Middleware Setup**: Static files are served, and request bodies are parsed.
+3. **Database Connection**: Connects to PostgreSQL using provided credentials.
+4. **CRUD Operations**: Various routes handle task creation, retrieval, updating, and deletion.
+5. **Dynamic Rendering**: EJS templates render tasks dynamically on the front end.
+
+The application provides a simple and intuitive interface for task management, with a robust backend for data storage and manipulation. 
+
+For more details, you can check the repository [here](https://github.com/akshiita07/PlanPilot).
 
 ### Project Structure
 1. **Express.js Setup**:
