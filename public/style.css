@@ -3,16 +3,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
     min-height: 80vh;
+}
+
+.content {
+    display: flex;
+    padding: 10px 10px;
 }
 
 .container {
     background-color: #60c0bf;
     min-height: 75vh;
-    min-width: 40vw;
+    min-width: 50vw;
+    max-width: 70vw;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -32,6 +35,7 @@
 
 
 #newTaskForm {
+    width: 100%;
     display: flex;
     margin: 10px 0;
     justify-content: space-between;
@@ -43,13 +47,14 @@
     border: 1.5px solid black;
     outline: none;
     padding: 10px 20px;
-    min-width: 300px;
+    min-width: 170px;
+    width: 55vw;
     border-radius: 10px;
 }
 
 .newTaskInput::placeholder {
     color: gray;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -88,7 +93,7 @@
     align-items: center;
 }
 
-.taskItemsIcons{
+.taskItemsIcons {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -98,6 +103,7 @@
 #editForm {
     display: inline;
 }
+
 #tickForm {
     display: flex;
     align-items: center;
@@ -144,9 +150,10 @@
     stroke-width: 1;
 }
 
-#editedForm{
+#editedForm {
     display: inline;
 }
+
 .doneButton {
     background-color: #8fc3ff;
     outline: none;
@@ -164,7 +171,7 @@
     stroke-width: 1.4;
 }
 
-.editTextInput{
+.editTextInput {
     min-width: 355px;
 }
 
@@ -185,3 +192,200 @@ footer {
     padding: 10px 0px;
     font-size: 1rem;
 }
+
+/* side navbar */
+.flex-column {
+    background-color: #e06b6b !important;
+    margin: 30px 0;
+    border-radius: 10px;
+    border: 2px solid black;
+    min-height: 75vh !important;
+}
+
+.dropdown {
+    justify-self: flex-end;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu {
+    text-align: center;
+    padding: 0 0;
+    inset: 0px auto auto 10px !important;
+}
+
+.dropdown-menu.show {
+    display: inline;
+}
+
+.dropdown-divider {
+    height: 25px;
+}
+
+.memberButton {
+    background-color: #f7cb66;
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+.memberButton:hover {
+    background-color: #fcc84d;
+    cursor: pointer;
+}
+
+.memberButton>svg:hover {
+    stroke-width: 1.3;
+}
+
+.d-block {
+    align-items: center;
+    justify-content: center;
+}
+
+/* for new mem page: */
+#colors {
+    display: flex;
+    gap: 13px;
+    margin: 10px 5px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+label div {
+    transform: scale(1.25);
+    border: 1.5px solid black;
+}
+
+.colorOption {
+    height: 23px;
+    width: 25px;
+}
+
+.colorOption:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.colorOption div {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+
+}
+
+#green {
+    background-color: green;
+}
+
+#lawngreen {
+
+    background-color: rgb(2 70 92);
+}
+
+#magenta {
+
+    background-color: magenta;
+}
+
+#coral {
+
+    background-color: coral;
+}
+
+#blue {
+
+    background-color: paleturquoise;
+}
+
+#purple {
+    background-color: purple;
+
+}
+
+#pink {
+
+    background-color: palevioletred;
+}
+
+#thistle {
+
+    background-color: thistle;
+}
+
+#addBtn {
+    font-size: 14px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50px;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background-color: #d3ddef;
+    color: black;
+    font-weight: 600;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    box-shadow: 0 0 2px 1px #d3ddef;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #f2f2f2;
+    margin: 0 0 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+}
+
+#inputName {
+    width: 30%;
+    outline: none;
+    border: none;
+    background: #f2f2f2;
+    margin: 0 0 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.usersButton {
+    /* backg color will be dynamically added */
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 3px 0px;
+}
+
+.usersButton:hover {
+    font-weight: bold;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+
+/* .usersButton>svg:hover {
+    stroke-width: 1.3;
+} */
